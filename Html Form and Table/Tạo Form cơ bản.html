@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Sở thích của bạn </title>
+  <style>
+    body {
+      padding: 50px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td, th {
+      padding: 20px;
+      border: 1px solid black;
+    }
+    th{
+      font-family: 'Patua One', cursive;
+      font-size:16px;
+      font-weight:400;
+      color:#fff;
+      text-align:center;
+      padding:20px;
+      background-color: #d61b06;
+      border-color: white;
+    }
+    td{
+      font-family: 'Open Sans', sans-serif;
+      font-weight:400;
+      color:#5f6062;
+      font-size:13px;
+      padding:20px 20px 20px 20px;
+      border-bottom:1px solid #e0e0e0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<form method="post" action="">
+  <table>
+    <tr>
+      <th colspan="2">Sở thích của bạn</th></tr>
+    <tr>
+      <td>
+        <label for="username">Username</label>
+      </td>
+      <td>
+  <input type="text" name="ten" id="username"></td>
+    </tr>
+    <tr>
+      <td>
+        <label for="email">email</label></td>
+      <td>
+        <input type="email" name="email" id="email"></td>
+    </tr>
+    <tr>
+      <td>
+        <label>Sở thích:</label></td>
+      <td>
+  <input type="checkbox" name="hobby" id="reading" value="reading">
+  <label for="reading">Đọc sách</label>
+  <input type="checkbox" name="hobby" id="music" value="music">
+  <label for="music">Nghe nhạc</label>
+  <input type="checkbox" name="hobby" id="sports" value="sports">
+  <label for="sports">Thể thao</label>
+  <input type="checkbox" name="hobby" id="travel" value="travel">
+  <label for="travel"> Du lịch</label>
+  <input type="checkbox" name="hobby" id="photography" value="photography">
+  <label for="photography">Chụp ảnh</label>
+  <input type="checkbox" name="hobby" id="game" value="game">
+        <label for="game">Chơi game</label></td>
+    </tr>
+      <tr>
+        <td></td>
+    <td>
+  <input type="submit" value="Gửi thông tin">
+        <input type="reset" value="Nhập lại"></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
