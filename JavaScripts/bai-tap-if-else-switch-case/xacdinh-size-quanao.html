@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xác định size quần áo</title>
+</head>
+<body>
+<script>
+    let size = parseInt(prompt("Cân nặng của bạn?"))
+    if (isNaN(size) || size <= 0)  {
+        document.write("Vui lòng nhập số cân hợp lệ")
+    }else if (50>size && size >= 0) {
+        document.write("Bạn mặc vừa size S")
+    }else if (65>size && size>=50) {
+        document.write("Bạn mặc vừa size M")
+    }else if (80>=size && size> 65) {
+        document.write("Bạn mặc vừa size L")
+    }else {
+        document.write("Bạn mặc vừa size XL")
+    }
+</script>
+
+</body>
+</html>
