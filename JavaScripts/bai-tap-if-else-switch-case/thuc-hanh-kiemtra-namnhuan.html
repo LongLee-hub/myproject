@@ -6,8 +6,16 @@
 </head>
 <body>
 <script>
-    let nam = prompt('Năm:');
-
+    let nam = +prompt('Năm:');
+    if (nam%4 ==0 && nam%100!==0){
+        document.write(nam+ " là năm nhuận")
+        }else {
+        if (nam%400 ==0 && nam%100==0){
+            document.write(nam + " là năm nhuận")
+        }else{
+            document.write(nam +" không phải là năm nhuận")
+        }
+    }
 </script>
 
 
