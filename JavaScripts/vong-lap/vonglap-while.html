@@ -11,10 +11,10 @@
     let tong = 0;
     while(num != -1){
         tong += num;
-        alert(tong);
+        alert("Tổng hiện tại: " + tong);
         num = parseInt(prompt("Nhập tiếp số để tính tổng (Nhập -1 để thoát): "))
-
     }
+    document.getElementById("tong").innerHTML = "Tổng các số bạn nhập là: " + tong;
 </script>
 </body>
 </html>
