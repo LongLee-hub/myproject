@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập hai số a và b, kiểm tra xem a có chia hết cho b hay không.</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập số a:")
+    let b = +prompt("Nhập số b:")
+    if (isNaN(a) || isNaN(b) || b === 0) {
+        alert(" Phép tính của bạn không thể tính")
+    } else {
+        let x = a % b === "0" ? "a chia het cho b" : "a khong chia het cho b";
+        document.write(x);
+    }
+</script>
+</body>
+</html>
