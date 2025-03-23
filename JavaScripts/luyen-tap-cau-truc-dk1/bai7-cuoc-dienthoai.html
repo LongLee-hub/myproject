@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính cước điện thoại hộ gia đình</title>
+</head>
+<body>
+<h1>Tính giá cước cho thuê bao trả sau</h1>
+<table border="2px">
+    <tr colspan="3"> Thông tin sử dụng gói cước</tr>
+    <tr>
+        <td>Danh mục</td>
+        <td>Giá cước</td>
+        <td>Mức sử dụng(theo phút)</td>
+    </tr>
+    <tr>
+        <td>Cước thuê bao</td>
+        <td>22.000 đ/tháng</td>
+        <td>Cố định</td>
+    </tr>
+    <tr>
+        <td>Cước gọi nội hạt</td>
+        <td>220 đ/phút</td>
+        <td><input type="number" id ="noihat">Phút</td>
+    </tr>
+    <tr>
+        <td colspan="3"><strong>Cước gọi liên tỉnh</strong></td>
+    </tr>
+    <tr>
+        <td>Cước gọi nội mạng</td>
+        <td>790 đ/phút</td>
+        <td><input type="number" id="noimang">Phút</td>
+    </tr>
+    <tr>
+        <td>Cước gọi ngoại mạng</td>
+        <td>1000 đ/phút</td>
+        <td><input type="number" id="ngoaimang">Phút</td>
+    </tr>
+    <tr>
+        <td colspan="3"><strong>Cước gọi các dịch vụ giải đáp thông tin kinh tế xã hội, DV GTGT</strong></td>
+    </tr>
+    <tr>
+        <td>Giải đáp thông tin kinh tế</td>
+        <td>2000 đ/phút</td>
+        <td><input type="number" id="DVTT">Phút</td>
+    </tr>
+</table>
+<p id="tiencuoc"></p>
+
+<button type="button" onclick="tinhcuoc()"> Tính cước</button>
+<script>
+    function tinhcuoc() {
+        let noihat = parseInt(document.getElementById("noihat").value);
+        let ngoaimang = parseInt(document.getElementById("ngoaimang").value);
+        let noimang = parseInt(document.getElementById("noimang").value);
+        let DVTT = parseInt(document.getElementById("DVTT").value);
+        if (isNaN(noihat) || isNaN(ngoaimang) || isNaN(noimang) || isNaN(DVTT)) {
+         alert("Nhập đúng số phút!")
+        }else {
+            document.getElementById("tiencuoc").innerHTML = noihat*220+ngoaimang*1000+noimang*790+DVTT*2000 + "VNĐ";
+        }
+    }
+</script>
+</body>
+</html>
