@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp loại học lực của học sinh</title>
+</head>
+<body>
+<table style="width:50%" border="2px">
+    <tr>
+        <th colspan="2"> Thành tích học tập</th>
+    </tr>
+    <tr>
+        <td>Điểm bài kiểm tra 1</td>
+        <td id="baikt1"></td>
+    </tr>
+    <tr>
+        <td>Điểm bài kiểm tra 2</td>
+        <td id="baikt2"></td>
+    </tr>
+    <tr>
+        <td>Điểm bài thi giữa kỳ</td>
+        <td id="giuaky"></td>
+    </tr>
+    <tr>
+        <td>Điểm bài thi cuối kỳ</td>
+        <td id="cuoiky"></td>
+    </tr>
+    <tr>
+        <td>Điểm tổng kết</td>
+        <td id="tongket"></td>
+    </tr>
+    <p id="xeploai"></p>
+</table>
+<script>
+    let baikt1 = +prompt("Điểm bài kiểm tra 1")
+    document.getElementById("baikt1").innerHTML = baikt1;
+    let baikt2 = +prompt("Điểm bài kiểm tra 2")
+    document.getElementById("baikt2").innerHTML = baikt2;
+    let giuaky = +prompt("Điểm bài thi giữa kỳ")
+    document.getElementById("giuaky").innerHTML = giuaky;
+    let cuoiky = +prompt("Điểm bài thi cuối kỳ")
+    document.getElementById("cuoiky").innerHTML = cuoiky;
+    let tongket = (baikt1 + baikt2 + giuaky * 3 + cuoiky * 5) / 10;
+    document.getElementById("tongket").innerHTML = tongket;
+
+    if (isNaN(baikt1) || isNaN(baikt2) || isNaN(giuaky) || isNaN(cuoiky)) {
+        alert(" Vui lòng nhập đúng điểm thi")
+    } else if (baikt1 > 10 || baikt2 > 10 || giuaky > 10 || cuoiky > 10) {
+        alert("Vui lòng nhập đúng điểm thi")
+    } else if (baikt1 < 0 || baikt2 < 0 || giuaky < 0 || cuoiky < 0) {
+        alert("Vui lòng nhập đúng điểm thi")
+    } else {
+        if (tongket <= 10 && tongket > 8) {
+            document.getElementById("xeploai").innerHTML = "Bạn đạt học lực Giỏi";
+        } else if (tongket <= 8 && tongket >= 6.5) {
+            document.getElementById("xeploai").innerHTML = "Bạn đạt học lực Khá"
+        } else if (tongket <= 6.5 && tongket >= 4.4) {
+            document.getElementById("xeploai").innerHTML = "Bạn đạt học lực Trung Bình"
+        } else if (tongket <= 4.3 && tongket >= 0) {
+            document.getElementById("xeploai").innerHTML = "Bạn học lại"
+        }
+    }
+
+</script>
+</body>
+</html>
