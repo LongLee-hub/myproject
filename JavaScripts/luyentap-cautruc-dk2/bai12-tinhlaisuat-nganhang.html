@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính lãi suất gửi ngân hàng</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th colspan="2">Lãi suất gửi ngân hàng</th>
+    </tr>
+    <tr>
+        <td>
+            <label for="tiengoc"> Tiền gốc gửi</label>
+        </td>
+        <td><input type="number" id="tiengoc" name="tiengoc">VNĐ</td>
+    </tr>
+    <tr>
+        <td>
+            <label for="laisuat"> Lãi xuất hàng năm</label>
+        </td>
+        <td><input type="number" id="laisuat" name="laisuat">%</td>
+    </tr>
+    <tr>
+        <td>
+            <label for="gheplai"> Số lần ghép lãi trong 1 năm</label>
+        </td>
+        <td><input type="number" id="gheplai" name="gheplai">số lần/năm</td>
+    </tr>
+    <tr>
+        <td>
+            <label for="namgui"> Số năm gửi</label>
+        </td>
+        <td><input type="number" id="namgui" name="namgui">năm</td>
+    </tr>
+</table>
+<button onclick="tinhtien()">Tính tiền</button>
+<p id="demo"></p>
+<script>
+    function tinhtien() {
+        let tiengoc = parseFloat(document.getElementById("tiengoc").value);
+        let laisuat = parseFloat(document.getElementById("laisuat").value);
+        let gheplai = parseFloat(document.getElementById("gheplai").value);
+        let namgui = parseFloat(document.getElementById("namgui").value);
+        let a = tiengoc * Math.pow((1 + laisuat / gheplai), gheplai * namgui);
+        let lai = a - tiengoc
+        document.getElementById("demo").innerHTML =
+            `<b> Số tiền lãi sau ${namgui} năm là: </b> ${Math.round(lai).toLocaleString("vi-VN")} VNĐ<br>
+             <b> Tổng tiền nhận về là: </b>${Math.round(a).toLocaleString("vi-VN")} VNĐ`;
+    }
+</script>
+</body>
+</html>
