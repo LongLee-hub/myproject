@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chương trình tính giá điện</title>
+</head>
+<body>
+<table border="2px">
+    <tr>
+        <th colspan="3">Bảng giá tính tiền điện tháng</th>
+    </tr>
+    <tr>
+        <td>Bậc</td>
+        <td>Mức sử dụng</td>
+        <td>Giá bán điện (đồng/kWh</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>0-50kWh</td>
+        <td>1893</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>51-100kWh</td>
+        <td>1956</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>101-200kWh</td>
+        <td>2271</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>201-300kWh</td>
+        <td>2860</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>301-400kWh</td>
+        <td>3197</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>trên 401kWh</td>
+        <td>3302</td>
+    </tr>
+</table>
+<label for="kWh">Số kWh bạn sử dụng tháng này </label>
+<input type="number" id ="kWh">
+<button onclick="tinhgiadien()">Tính giá điện</button>
+<p id="demo"></p>
+<script>
+    function tinhgiadien() {
+        let kwhsudung = parseFloat(document.getElementById("kWh").value);
+        if (isNaN(kwhsudung) || kwhsudung <= 0) {
+            document.getElementById("demo").innerHTML = "Xin nhập đúng số";
+        } else if (kwhsudung <= 50 && kwhsudung > 0) {
+            document.getElementById("demo").innerHTML = "Giá điện của bạn là " + kwhsudung * 1896 + "VNĐ"
+        } else if (kwhsudung <= 100 && kwhsudung > 50) {
+            document.getElementById("demo").innerHTML = "Giá điện của bạn là " + kwhsudung * 1956 + "VNĐ"
+        } else if (kwhsudung <= 200 && kwhsudung > 100) {
+            document.getElementById("demo").innerHTML = "Giá điện của bạn là " + kwhsudung * 2271 + "VNĐ"
+        } else if (kwhsudung <= 300 && kwhsudung > 200) {
+            document.getElementById("demo").innerHTML = "Giá điện của bạn là " + kwhsudung * 2860 + "VNĐ"
+        } else if (kwhsudung <= 400 && kwhsudung > 300) {
+            document.getElementById("demo").innerHTML = "Giá điện của bạn là " + kwhsudung * 3197 + "VNĐ"
+        } else {
+            document.getElementById("demo").innerHTML = "Giá điện của bạn là " + kwhsudung * 3302 + "VNĐ"
+        }
+    }
+</script>
+</body>
+</html>

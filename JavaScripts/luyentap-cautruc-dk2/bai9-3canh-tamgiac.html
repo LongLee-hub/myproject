@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra 3 cạnh tam giác</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    let a = +prompt("Cạnh a của tam giác")
+    let b = +prompt("Cạnh b của tam giác")
+    let c = +prompt("Cạnh c của tam giác")
+    if (a < 0 || b < 0 || c < 0) {
+        document.getElementById("demo").innerHTML = "Cạnh tam giác không hợp lệ"
+    } else if (a + b > c && b + c > a && c + a > b) {
+        document.getElementById("demo").innerHTML = a + "," + b + "," + c + " là 3 cạnh của tam giác"
+    } else {
+        document.getElementById("demo").innerHTML = a + "," + b + "," + c + " không là 3 cạnh của tam giác"
+    }
+
+
+</script>
+
+</body>
+</html>
