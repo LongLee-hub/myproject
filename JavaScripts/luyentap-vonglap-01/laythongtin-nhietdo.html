@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lấy thông tin nhiệt độ</title>
+</head>
+<body>
+<script>
+    let a=null;
+    do{
+        a =  +prompt("Nhiệt độ thích hợp để code");
+        if (a > 100){
+            alert("Bạn hãy giảm nhiệt độ")
+        }else if (a<20){
+            alert(" Bạn hãy tăng nhiệt độ")
+        }
+    }
+    while (a > 100 || a<20);
+
+    document.write(" Nhiệt độ để bạn code ngon là "+a)
+</script>
+
+</body>
+</html>
