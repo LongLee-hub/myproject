@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị các số nguyên tố</title>
+</head>
+<body>
+<script>
+  let n = +prompt("Số nguyên tố mà bạn muốn in ra")
+  let count = 0;
+  let a = 2
+  while (count < n) {
+      let isPrime = true;
+      for (let j = 2; j <= Math.sqrt(a); j++) {
+          if (a % j === 0) {
+              isPrime = false;
+              break;
+          }
+      }
+      if (isPrime) {
+          document.write(a+"<br>");
+          count++;
+      }
+      a++;
+  }
+
+</script>
+
+</body>
+</html>
