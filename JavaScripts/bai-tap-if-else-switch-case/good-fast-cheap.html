@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Good-Fast-Cheap</title>
+</head>
+<body>
+<h1>Good-Fast-Cheap</h1>
+<table>
+    <tr>
+        <td><img id="good" src="off-button.png" onclick="doianhgood()"></td>
+        <td><p> Good </p></td>
+    </tr>
+    <tr>
+        <td><img id="fast" src="off-button.png" onclick="doianhfast()"></td>
+        <td><p> Fast </p></td>
+    </tr>
+    <tr>
+        <td><img id="cheap" src="off-button.png" onclick="doianhcheap()"></td>
+        <td><p> Cheap </p></td>
+    </tr>
+</table>
+<script>
+    let good = document.getElementById("good");
+    let fast = document.getElementById("fast");
+    let cheap = document.getElementById("cheap");
+
+    function doianhgood() {
+        good.src = good.src.includes("off-button.png") ? 'on-button.png' : 'off-button.png';
+    }
+
+    function doianhfast() {
+        fast.src = fast.src.includes("off-button.png") ? 'on-button(1).png' : 'off-button.png';
+    }
+
+    function doianhcheap() {
+        cheap.src = cheap.src.includes("off-button.png") ? 'on-button(2).png' : 'off-button.png';
+    }
+    let arr = [good.src, fast.src];
+
+</script>
+
+</body>
+</html>
