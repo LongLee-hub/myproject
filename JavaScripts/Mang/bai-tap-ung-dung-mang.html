@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập ứng dụng mảng </title>
+</head>
+<body>
+<table id="table"></table>
+<script>
+    let table = document.getElementById("table");
+    for(let i = 0;i<10;i++){
+        let tr = document.createElement("tr");
+        table.appendChild(tr);
+        for(let j=0;j<5;j++){
+            let td = document.createElement("td");
+            // if(i%2 === 0){
+            //     if(j%2 === 0){
+            //         td.style.backgroundColor = "red";
+            //     }else{
+            //         td.style.backgroundColor = "green";
+            //     }
+            // }else{
+            //     if(j%2 === 0){
+            //         td.style.backgroundColor = "green";
+            //     }else{
+            //         td.style.backgroundColor = "red";
+            //     }
+            // }
+            let random = Math.floor(Math.random()*1000);
+            td.style.backgroundColor = color(random);
+            td.style.width = "20px";
+            td.style.height = "20px";
+            tr.appendChild(td);
+
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic - Tac -Toe</title>
+</head>
+<body>
+<h3> Cờ Caro </h3>
+<p id="carogame"></p>
+<input type="button", value="Change Value" onclick="changeValue()">
+<script>
+    let b = document.getElementById("carogame");
+    let board = [];
+    let data = "";
+    for (let i =0; i < 5; i++){
+        board[i] = [(1),(1),(1),(1),(1)];
+    }
+    for (let i =0; i < 5; i++){
+        data += "<br/>";
+        for (let j =0; j < 5; j++){
+            data += board[i][j] + "&nbsp;&nbsp;";
+        }
+    }
+
+    data += "<br/><br/>"
+    b.innerHTML = data;
+function changeValue(){
+    let luot = 1;
+    let x = parseInt(prompt("tọa độ x"));
+    let y = parseInt(prompt("tọa độ y"));
+    if (h%2==0){
+        board[x][y] = "x";
+    }else{
+        board[x][y] = "o";
+    }
+    luot++;
+    for (let i =0; i < 5; i++) {
+        data += "<br/>";
+        for (let j = 0; j < 5; j++) {
+            data += board[i][j] + "&nbsp;&nbsp;";
+        }
+    }
+b.innerHTML = data;
+}
+for (let i =0; i < 5; i++){
+    for (let j =0; j < 5; j++){
+        if (board[i][j] === "x" && board[i+1][j] === "x" && board[i+2][j] === "x" ||
+        board[i][j] === "x" && board[i][j+1] === "x" && board[i][j+2] === "x" ){
+            alert("x thắng")
+        }else if(board[i][j] === "o" && board[i+1][j] === "o" && board[i+2][j] === "o" ||
+            board[i][j] === "o" && board[i][j+1] === "o" && board[i][j+2] === "o"){
+            alert("o thắng")
+        }
+    }
+}
+</script>
+</body>
+</html>

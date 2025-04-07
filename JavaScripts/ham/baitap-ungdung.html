@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập ứng dụng hàm</title>
+</head>
+<body>
+<!--<button type="button" onclick="myFunction()"> Thay đổi</button>-->
+<input id = "countVowels" onchange="countVowels()">
+<div id="result"></div>
+<script>
+    // function add(a, b) {
+    //     return a + b; // cần ghi thêm return để trả về kết quả
+    // }
+    // function myFunction() {
+    //     let red = Math.floor(Math.random()*256);
+    //     let blue = Math.floor(Math.random()*256);
+    //     let green = Math.floor(Math.random()*256);
+    //     document.body.style.backgroundColor = `rgb(${red},${blue},${green})`;
+    // }
+    // let x = prompt("giá trị cần tìm trong Mảng")
+    // // let number = [12, 15, 3, 2, 6, 8, 1, 8];
+    // //
+    // // function findIndex(value) {
+    // //     for (let index = 0; index < number.length; index++) {
+    // //         if (number[index] === value)
+    // //             return index;
+    // //         }
+    // //         return -1
+    // //     }
+    // //
+    // //
+    // // let index = findIndex(15);
+    // // console.log(index);
+    // // index = findIndex(30);
+    // console.log(index);
+let input = document.getElementById("countVowels");
+    function countVowels(value) {
+        let vowels = [u, e, o, a, i];
+        let string = input.value;
+        let chu = fromArray(string);
+        let count = 0;
+        for (let i = 0; i < chu.length; i++){
+            for (let j = 0; j < vowels.length; j++){
+                if (vowels[j] == chu[i]);
+                count++;
+            }
+        }
+    }document.getElementById("result").value = count;
+</script>
+</body>
+</html>
