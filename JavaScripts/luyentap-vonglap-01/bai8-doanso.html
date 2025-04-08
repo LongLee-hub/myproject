@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Đoán số</title>
+</head>
+<body>
+<button id ="button" type="button" onclick="myFunction()"> Chơi</button>
+<script>
+    function myFunction() {
+        let x = +prompt("Số bạn muốn đoán trong khoảng");
+        let y = Math.floor(Math.random() * x);
+        let count = 0;
+        while (count <3){
+            let z = +prompt("Số bạn đoán là?");
+            if (y == z){
+                document.getElementById("button").innerHTML ="Bạn đã đoán đúng";
+                break;
+            }else if (y !== z){
+                count ++;
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
