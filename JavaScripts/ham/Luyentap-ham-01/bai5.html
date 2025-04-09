@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Tìm chòm sao tương ứng</title>
+</head>
+<body>
+<script>
+    let x = prompt("Chòm sao:");
+    let chomsao1 = [ "Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let chomsao2 = ["Ursa Minor", "Taurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+    function chomsaoTuongUng(chomsao) {
+        for (let i = 0; i < chomsao1.length; i++) {
+            if (chomsao1[i] == chomsao) {
+                return document.write(chomsao2[i]);
+                break;
+            }
+
+        }
+        document.write("Không tìm thấy chòm sao");
+    }
+
+    chomsaoTuongUng(x)
+</script>
+</body>
+</html>

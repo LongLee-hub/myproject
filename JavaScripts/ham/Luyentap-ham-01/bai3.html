@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So sánh 2 tham số</title>
+</head>
+<body>
+<input type="number" id="number1">Tham số 1<br>
+<input type="number" id="number2">Tham số 2<br>
+
+<button type="button" onclick="kiemTra()">Kiểm tra</button>
+<script>
+
+    function kiemTra(){
+        let a = parseInt(document.getElementById("number1").value);
+        let b = parseInt(document.getElementById("number2").value);
+        if (a < b) {
+            return document.write( a + b)
+        }else if (a > b) {
+            return alert(a + " lớn hơn "+ b)
+        }
+    }
+</script>
+
+</body>
+</html>
