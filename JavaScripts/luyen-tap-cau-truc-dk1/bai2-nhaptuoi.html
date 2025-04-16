@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Nhập tuổi</title>
+</head>
+<body>
+<p> Nhập tuổi, kiểm tra và in kết quả xem học sinh có đủ điều kiện vào học lớp 10 hay không.</p>
+<script>
+    let x = +prompt("Nhập tuổi của bạn:")
+    if (isNaN(x) || x < 0) {
+        alert(" Nhập đúng tuổi của bạn.!!")
+    } else {
+        let a = x >= 15 ? "bạn đủ tuổi vào lớp 10" : "bạn chưa đủ tuổi vào lớp 10"
+        document.write(a);
+    }
+</script>
+
+</body>
+</html>

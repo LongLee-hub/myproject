@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Máy tính đơn giản</title>
+    <script src="bai-tap-may-tinh-dongian.js"></script>
+</head>
+<body>
+<h1> Máy tính đơn giản</h1>
+<table border="2" width="10%">
+    <tr>
+        <th colspan="4">
+            <p id="displaytext"></p>
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="nut(1)">1</button>
+        </td>
+        <td>
+            <button onclick="nut(2)">2</button>
+        </td>
+        <td>
+            <button onclick="nut(3)">3</button>
+        </td>
+        <td>
+            <button onclick="nut(`+`)" id="cong">+</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="nut(4)">4</button>
+        </td>
+        <td>
+            <button type="button" onclick="nut(5)">5</button>
+        </td>
+        <td>
+            <button type="button" onclick="nut(6)">6</button>
+        </td>
+        <td>
+            <button type="button" onclick="nut(`-`)" id="tru">-</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="nut(7)">7</button>
+        </td>
+        <td>
+            <button type="button" onclick="nut(8)">8</button>
+        </td>
+        <td>
+            <button type="button" onclick="nut(9)">9</button>
+        </td>
+        <td>
+            <button type="button" onclick="nut(`*`)" id="nhan">*</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="xoa()">C</button>
+        </td>
+        <td>
+            <button type="button" onclick="nut(0)">0</button>
+        </td>
+        <td>
+            <button type="button" onclick="tinhtoan()" id="tinhtoan">=</button>
+        </td>
+        <td>
+            <button type="button" onclick="nut(`/`)" id="chia">/</button>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

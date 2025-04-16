@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển độ C sang độ F</title>
+</head>
+<body>
+  <label for="doC">Nhập đô C</label><br>
+  <input type="text" id="doC">
+  <button type="button" onclick="DoF()"> Chuyển đổi độ F</button>
+  <p id="doF"></p>
+<script>
+  function DoF() {
+    var doC = document.getElementById("doC");
+    doC = parseInt(doC.value);
+    var result = (doC/5*9)+32
+    document.getElementById("doF").innerHTML = result +"Độ F";
+  }
+</script>
+</body>
+</html>

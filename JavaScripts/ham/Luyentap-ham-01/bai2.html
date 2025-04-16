@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gọi hàm</title>
+</head>
+<body>
+<input type="number" id="so">
+<button type="button" onclick="hienthiKetQua()"> Cộng số</button>
+<script>
+    function congSo(num) {
+        return parseInt(num)+1;
+    }
+    function hienthiKetQua() {
+        let x = document.getElementById("so").value;
+        let ketqua = congSo(x);
+        alert(ketqua);
+
+    }
+</script>
+</body>
+</html>

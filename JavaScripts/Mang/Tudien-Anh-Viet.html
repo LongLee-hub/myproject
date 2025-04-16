@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển Anh Việt</title>
+</head>
+<body>
+<h3> Từ điển Tiếng Anh</h3>
+<label for="tienganh"></label>
+<input id="tienganh" type="text">
+<button type="button" onclick="dich()"> Dịch</button>
+<p id="result"></p>
+<script>
+    let tienganh = ["hello", "student", "teacher", "dog", "cat"];
+    let tiengviet = ["xin chào", "học sinh", "cô giáo", "chó", "mèo"];
+
+    function dich() {
+        let text = document.getElementById("tienganh");
+        let result = "Từ không có trong từ điển ";
+        for (let i = 0; i < tienganh.length; i++) {
+            if (tienganh[i] == text.value) {
+                result = tienganh[i] + " có nghĩa là " + tiengviet[i];
+                break;
+            }
+        }
+        document.getElementById("result").innerHTML = result;}
+
+</script>
+
+</body>
+</html>

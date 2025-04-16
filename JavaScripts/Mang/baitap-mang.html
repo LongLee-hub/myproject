@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+//     let one = [2,4,6];
+//     let two = new Array(one.length + 1);
+//     for(let i = 0; i < one.length; i++){
+//         two[i]=one[i];
+//     }
+//     two[one.length] = 7;
+//
+// console.log(two);
+let girls = ["Lan","Hoa","Đào","Hương"];
+let boys = ["Ti","Teo","Tuat","Hoi"];
+let result = []
+let randomInt = Math.floor(Math.random()* boys.length);
+for(let i = 0,j=0; i<girls.length,j<boys.length; i++,j++){
+
+    result += girls[i] + " cặp với " + boys[randomInt+j] + "<br>";
+    if(boys[randomInt+j]==boys[i]){
+    }
+console.log(result);
+
+</script>
+
+</body>
+</html>

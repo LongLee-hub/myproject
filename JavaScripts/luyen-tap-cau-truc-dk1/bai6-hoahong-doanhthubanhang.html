@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoa hồng nhận được dựa trên doanh thu</title>
+</head>
+<body>
+<h1>Kết quả kinh doanh Tháng</h1>
+<table border="3px">
+    <tr>
+        <th colspan="2"> Kết quả kinh doanh tháng</th>
+    </tr>
+    <tr>
+        <td>Nhập doanh thu tháng này bạn kiếm được</td>
+        <td><label for="doanhso"></label><input type="number" id="doanhso">VNĐ</td>
+    </tr>
+    <tr>
+        <td>Hoa hồng tính theo doanh số</td>
+        <td id="hoahong"></td>
+    </tr>
+    <tr>
+        <td>Tổng lương bạn được nhận </td>
+        <td id="luong"></td>
+    </tr>
+</table>
+<br>
+<button type="button" onclick="tinhhoahong()">Tính hoa hồng</button>
+<script>
+    function tinhhoahong() {
+        let doanhthu = parseInt(document.getElementById('doanhso').value);
+        if (doanhthu >= 0 && doanhthu < 20000000) {
+            document.getElementById('hoahong').innerHTML = 0.1;
+            document.getElementById('luong').innerHTML = 0.1 * doanhthu + "VNĐ";
+        } else if (doanhthu >= 20000000 && doanhthu < 40000000) {
+            document.getElementById('hoahong').innerHTML = 0.2;
+            document.getElementById(`luong`).innerHTML = 0.2 * doanhthu + "VNĐ";
+        } else if (doanhthu >= 40000000) {
+            document.getElementById('hoahong').innerHTML = 0.3;
+            document.getElementById(`luong`).innerHTML = 0.3 * doanhthu + "VNĐ";
+        } else {
+            alert("Nhập đúng doanh thu của bạn!!")
+        }
+    }
+</script>
+</body>
+</html>

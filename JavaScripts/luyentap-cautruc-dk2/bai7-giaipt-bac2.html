@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 2</title>
+</head>
+<body>
+<table>
+  <tr>
+      <th colspan="3">Giải phương trình bậc 2</th>
+  </tr>
+    <tr>
+        <td colspan="3">Nhập số liệu theo định dạng a*x^2 + b*x + c = 0</td>
+    </tr>
+    <tr>
+        <td><input type="number" id="a"> *x^2 + </td>
+        <td><input type="number" id="b"> *x + </td>
+        <td><input type="number" id="c"> = 0</td>
+    </tr>
+</table>
+<br>
+<button onclick="giaipt()">Giải phương trình</button>
+<p id="demo"></p>
+<script>
+    function giaipt() {
+        let a = parseFloat(document.getElementById("a").value);
+        let b = parseFloat(document.getElementById("b").value);
+        let c = parseFloat(document.getElementById("c").value);
+        let delta = b*b-4*a*c
+        if (a === 0 && b === 0) {
+            document.getElementById("demo").innerHTML = "Phương trình vô nghiệm"
+        }else if (a===0){
+            document.getElementById("demo").innerHTML= "Phương trình có nghiệm x = "+ -c/b
+        }else if (delta < 0){
+            document.getElementById("demo").innerHTML = "Phương trình vô nghiệm"
+        }else if (delta > 0){
+            let sqrt_delta = Math.sqrt(delta)
+            document.getElementById("demo").innerHTML = "Phương trình có 2 nghiệm là <br> x1 = "+ (-b+sqrt_delta)/(2*a) +"<br> x2 = " +(-b-sqrt_delta)/(2*a)
+        }else if (delta = 0){
+            document.getElementById("demo").innerHTML = "Phương trình có 1 nghiệm là x = " + -b/(2*a)
+        }else{
+            document.getElementById("demo").innerHTML = "Không tính được"
+        }
+    }
+</script>
+</body>
+</html>

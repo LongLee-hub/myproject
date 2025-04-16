@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích hình tron</title>
+</head>
+<body>
+<label for="duongkinh">Nhập đường kính</label><br>
+<input type="number" id="duongkinh" name="duongkinh"><br>
+<button type="button" onclick="dientichvachuvi()"> Tính diện tích và chu vi</button>
+<p id="dientich"></p>
+<p id="chuvi"></p>
+<script>
+  function dientichvachuvi() {
+    var duongkinh = document.getElementById("duongkinh").value;
+    var d = parseInt(duongkinh);
+    var dientich = 3.14*d*d/4
+    document.getElementById("dientich").innerHTML = "Diện tích hình tròn là "+ dientich;
+    var chuvi = 3.14*d
+    document.getElementById("chuvi").innerHTML = "Chu vi hình tròn là "+ chuvi;
+  }
+</script>
+</body>
+</html>

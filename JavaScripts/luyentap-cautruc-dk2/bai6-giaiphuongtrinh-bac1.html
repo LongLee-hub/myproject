@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 1</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th colspan="3">Giải phương trình bậc 1</th>
+    </tr>
+    <tr>
+        <td colspan="3">Nhập theo định dạng a*x+b=c</td>
+    </tr>
+    <tr>
+        <td><input type="number" id="a">*x +</td>
+        <td><input type="number" id="b">=</td>
+        <td><input type="number" id="c"></td>
+    </tr>
+</table>
+<br>
+<button onclick="giaiphuongtrinh()">Giải phương trình</button>
+<p id="giaipt"></p>
+<script>
+    function giaiphuongtrinh() {
+        let a = parseFloat(document.getElementById("a").value);
+        let b = parseFloat(document.getElementById("b").value);
+        let c = parseFloat(document.getElementById("c").value);
+        if (isNaN(a) || isNaN(b) || isNaN(c)) {
+            document.getElementById("giaipt").innerHTML = "Vui lòng nhập đúng giá trị"
+        } else if (a == 0 || b == c) {
+            document.getElementById("giaipt").innerHTML = "Phương trình vô nghiệm";
+        } else {
+            document.getElementById("giaipt").innerHTML = "x =" + (b - c) / a
+        }
+    }
+</script>
+</body>
+</html>

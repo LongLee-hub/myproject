@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo Form lấy Survey khách hàng</title>
+</head>
+<body>
+<h2> Market Research Survey</h2>
+<p> Please take a few moments to complete this satisfaction survey</p>
+<hr>
+<p>what is your age range?</p>
+<select name="age" id="age">
+    <option value="18-24">18-24</option>
+    <option value="25-34">25-34</option>
+    <option value="35-50">35-50</option>
+    <option value="50+">50+</option>
+</select>
+<p>what is your yearly income range?</p>
+<select name="income" id="income">
+    <option value="$0-$25,0000">$0-$25,0000</option>
+    <option value="$25,000-$50,000">$25,000-$50,000</option>
+    <option value="$50,000">$50,000</option>
+</select>
+<p>Gender Identity</p>
+<input type="radio" name="gender" id="male" value="male">Male
+<input type="radio" name="gender" id="female" value="female">Female
+<input type="radio" name="gender" id="Nonbinary" value="nonbiary">Non-binary
+<input type="radio" name="gender" id="other" value="other">Other
+<input type="text" name="gender" id="unknown" value="">
+<p> Which of the following products have your purchased in the last 2 months. Please check all that apply.</p>
+<input type="checkbox" name="purchased-product" id="purchased-product1"> Product 1
+<input type="checkbox" name="purchased-product" id="purchased-product2"> Product 2
+<input type="checkbox" name="purchased-product" id="purchased-product3"> Product 3
+<p> How often would you use our new product?</p>
+<select name="frequency" id="frequency">
+    <option value="Daily">Daily</option>
+    <option value="Weekly">Weekly</option>
+    <option value="Monthly">Monthly</option>
+</select>
+<p>What would you pay for the new product?</p>
+<label for="dollars">$</label>
+<input type="text" id="dollars" name="dollars" size="5">
+.
+<input type="text" id="cents" name="cents" size="2"><br>
+
+<label for="dollars">Dollars</label>
+<label for="cents" style="margin-left: 35px;">Cents</label>
+<p> What features would you like to see in new product.</p>
+<textarea name="features" id="features" cols="30" rows="10"></textarea><br>
+<input type="submit" value="Gửi thông tin">
+</body>
+</html>

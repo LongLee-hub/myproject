@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tổng 20 số Fibonaci đầu tiên</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+  let fibonaci = [0,1];
+  let sum = 1;
+  for (let i = 1; i<20; i++){
+    let x = fibonaci[i]+fibonaci[i-1];
+    fibonaci.push(x);
+    sum += x;
+  }
+  document.getElementById("demo").innerHTML = sum;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thuế thu nhập cá nhân</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><label for="thunhap"> Thu nhập của bạn là </label></td>
+        <td><input type="number" name="thunhap" id="thunhap">VNĐ</td>
+    </tr>
+    <tr>
+        <td><label for="baohiem"> Lương đóng bảo hiểm của bạn là </label></td>
+        <td><input type="number" name="baohiem" id="baohiem">VNĐ</td>
+    </tr>
+    <tr>
+        <td><label for="songuoi">Số người phụ thuộc vào bạn</label></td>
+        <td><input type="number" name="songuoi" id="songuoi">Người</td>
+    </tr>
+</table>
+<button onclick="tinhthue()"> Tính thuế</button>
+<p id="demo"></p>
+
+<script>
+    function tinhthue() {
+        let thunhap = parseInt(document.getElementById("thunhap").value);
+        let baohiem = parseInt(document.getElementById("baohiem").value);
+        let songuoi = parseInt(document.getElementById("songuoi").value);
+        let bhbatbuoc = baohiem * 0.105
+        let nguoipt = songuoi * 4400000
+        let tntinhthue = thunhap - bhbatbuoc - nguoipt - 11000000
+        let thueSuat;
+        if (thunhap <= 0) {
+            thueSuat = 0
+        } else if (tntinhthue <= 5000000 || tntinhthue > 0) {
+            thueSuat = 0.05
+        } else if (tntinhthue <= 10000000 || tntinhthue > 5000000) {
+            thueSuat = 0.1
+        } else if (tntinhthue <= 18000000 || tntinhthue > 10000000) {
+            thueSuat = 0.15
+        } else if (tntinhthue <= 3200000 || tntinhthue > 18000000) {
+            thueSuat = 0.2
+        } else if (tntinhthue <= 5200000 || tntinhthue > 3200000) {
+            thueSuat = 0.25
+        } else if (tntinhthue <= 8000000 || tntinhthue > 5200000) {
+            thueSuat = 0.3
+        } else if (tntinhthue > 80000000) {
+            thueSuat = 0.35
+        } else {
+            alert("Vui lòng nhập đúng")
+        }
+        let ketqua =`<b>Bảo hiểm bắt buộc:</b> ${baohiem}*0.15 = ${bhbatbuoc} VNĐ <br>
+            <b>Giảm trừ bản thân:</b> 11000000 VNĐ <br>
+            <b>Giảm trừ người phụ thuộc:</b> 4400000*${songuoi} = ${nguoipt} VNĐ <br>
+            <b>Thu nhập tính thuế:</b> ${thunhap} - ${bhbatbuoc} -11000000 - ${nguoipt} = ${tntinhthue} VNĐ <br>
+            <b>Mức thuế áp dụng:</b> ${thueSuat * 100}% <br>
+            <b>Thuế thu nhập cá nhân phải nộp:</b> ${tntinhthue * thueSuat} VNĐ`;
+        document.getElementById("demo").innerHTML = ketqua;
+    }
+</script>
+
+
+</body>
+</html>

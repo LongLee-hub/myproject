@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Chuyển đổi chữ thường sang chữ Hoa</title>
+</head>
+<body>
+<script>
+    let x = prompt("Text input");
+    let array = Array.from(x);
+    let result = [];
+    console.log(array);
+    for (let i = 0; i < array.length; i++) {
+        let string = array[i];
+        if (string == string.toUpperCase()) {
+            result += string.toLowerCase();
+        }else{
+            result += string.toUpperCase();
+        }
+    }
+    document.write(result);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dug quản lý sản phẩm hàm</title>
+
+</head>
+<body>
+<h2> Add New Product</h2>
+<form onsubmit="createProduct(event)">
+    <input type="text" name="productName" id="productName">
+    <button type="submit">Add</button>
+</form>
+<h2> Display All Product</h2>
+<table>
+    <tbody id="productList">
+    <tr>
+        <td>Sony Experia</td>
+        <td><button type="button">Edit</button></td>
+        <td><button type="button">Delete</button></td>
+    </tr>
+    </tbody>
+</table>
+<script src="ungdung-quanly-sanpham.js"></script>
+</body>
+</html>

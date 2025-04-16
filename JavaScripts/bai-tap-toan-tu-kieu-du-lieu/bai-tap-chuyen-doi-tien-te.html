@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập chuyển đổi tiền tệ</title>
+    <script src="bai-tap-chuyen-doi-tien-te.js"></script>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th></th>
+        <th><label for="currentcy1">From Currentcy</label></th>
+        <th></th>
+        <th><label for="currentcy2">To Currentcy</label></th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>
+            <label for="amount"></label>
+            <input type="number" id="amount">
+        </td>
+        <td></td>
+        <td>
+            <select id="currentcy1">
+                <option value="USD">USD</option>
+                <option value="VNĐ">VNĐ</option>
+            </select>
+        </td>
+        <td></td>
+        <td>
+            <select id="currentcy2">
+                <option value="USD">USD</option>
+                <option value="VNĐ">VNĐ</option>
+            </select>
+        </td>
+        <td></td>
+        <td>
+            <button type="button" onclick="doitien()">Đổi tiền</button>
+        </td>
+    </tr>
+</table>
+<p id="result"></p>
+</body>
+</html>

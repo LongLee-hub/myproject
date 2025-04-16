@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo và gọi Hàm</title>
+</head>
+<body>
+<script>
+  function processAnswer(answer){
+    let result = "";
+    if(answer){
+      result = "Được đấy";
+    }else{
+      result = "Thôi để sau";
+    }return result;
+  }
+  let confirmAnswer= confirm("chơi không?");
+  let theAnswer= processAnswer(confirmAnswer);
+  alert(theAnswer);
+</script>
+</body>
+</html>

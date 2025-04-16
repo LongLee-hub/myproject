@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập số bất kỳ, tính tổng từ 1 đến nó</title>
+</head>
+<body>
+<h1>Nhập số bất kỳ, tính tổng từ 1 đến nó</h1>
+<p id="tong"></p>
+<script>
+    let num = parseInt(prompt("Số bạn chọn là: "))
+    let tong = 0
+    for(i=0; i<num;i++){
+        tong = tong + i
+    }
+    document.getElementById("tong").innerHTML = "Tổng của dãy số từ 1 đến "+num+" là "+tong
+</script>
+</body>
+</html>

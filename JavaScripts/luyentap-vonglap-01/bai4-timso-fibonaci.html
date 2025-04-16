@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiện thị 20 số dãy Fibonaci</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    let fibonaci = [0,1,1];
+    let fibonacis1 = null;
+    for (let i = 2; ;i++){
+        let x = fibonaci[i-1]+fibonaci[i];
+        fibonaci.push(x);
+        if (x % 5 == 0){
+            fibonacis1 = x;
+            break;
+        }
+    }
+    document.getElementById("demo").innerHTML = fibonacis1;
+
+</script>
+</body>
+</html>

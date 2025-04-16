@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ffa0f514-868d-4d63-a713-81db97797e11" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/JavaScripts/bai-tap-if-else-switch-case/good-fast-cheap.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScripts/bai-tap-if-else-switch-case/good-fast-cheap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/Dichuyen-doituong.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/Dichuyen-doituong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/Xaydung-lopmophong-denpin.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/Xaydung-lopmophong-denpin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/tuongtac-congtac-bongden.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/tuongtac-congtac-bongden.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/turn0ff-0n-light.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/turn0ff-0n-light.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/JavaScripts/Bài tập toán tử kiểu dữ liệu/tinh-dientich-hinhtron.html" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2u82F8UH5XQnc2hc9Npq8cghMc2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "E:/Code gym/my project",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Code gym\my project\JavaScripts\luyentap-cautruc-dk2" />
+      <recent name="E:\Code gym\my project\JavaScripts\vong-lap\Debug" />
+      <recent name="E:\Code gym\my project\.idea" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.25659.40" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ffa0f514-868d-4d63-a713-81db97797e11" name="Changes" comment="" />
+      <created>1741615773878</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741615773878</updated>
+      <workItem from="1741615775064" duration="2214000" />
+      <workItem from="1741694881603" duration="3022000" />
+      <workItem from="1741747515582" duration="2546000" />
+      <workItem from="1741753300600" duration="4913000" />
+      <workItem from="1741773286189" duration="52000" />
+      <workItem from="1741773934839" duration="10084000" />
+      <workItem from="1741830447021" duration="15126000" />
+      <workItem from="1741950380067" duration="1298000" />
+      <workItem from="1741956137061" duration="918000" />
+      <workItem from="1741958163704" duration="4011000" />
+      <workItem from="1742097669471" duration="10735000" />
+      <workItem from="1742214367545" duration="1644000" />
+      <workItem from="1742219305471" duration="2499000" />
+      <workItem from="1742270396163" duration="5992000" />
+      <workItem from="1742347805311" duration="7142000" />
+      <workItem from="1742389413608" duration="1820000" />
+      <workItem from="1742441535764" duration="12136000" />
+      <workItem from="1742562348629" duration="4127000" />
+      <workItem from="1742611160515" duration="5502000" />
+      <workItem from="1742632644627" duration="396000" />
+      <workItem from="1742642117589" duration="9792000" />
+      <workItem from="1742722463737" duration="6343000" />
+      <workItem from="1742743124068" duration="5777000" />
+      <workItem from="1742788115620" duration="2596000" />
+      <workItem from="1742802261620" duration="3685000" />
+      <workItem from="1742806720902" duration="3504000" />
+      <workItem from="1742819327510" duration="1901000" />
+      <workItem from="1742825899120" duration="724000" />
+      <workItem from="1742957560171" duration="10732000" />
+      <workItem from="1742994770454" duration="2979000" />
+      <workItem from="1743132276179" duration="2300000" />
+      <workItem from="1743160681174" duration="9372000" />
+      <workItem from="1743221383580" duration="21000" />
+      <workItem from="1743381349541" duration="221000" />
+      <workItem from="1743498140707" duration="4465000" />
+      <workItem from="1743582193655" duration="6807000" />
+      <workItem from="1743602595885" duration="3877000" />
+      <workItem from="1743767796016" duration="6827000" />
+      <workItem from="1744022241894" duration="3126000" />
+      <workItem from="1744030452115" duration="372000" />
+      <workItem from="1744077094645" duration="3817000" />
+      <workItem from="1744101431369" duration="12038000" />
+      <workItem from="1744172239039" duration="3976000" />
+      <workItem from="1744199411134" duration="3424000" />
+      <workItem from="1744205587523" duration="1739000" />
+      <workItem from="1744544505242" duration="1260000" />
+      <workItem from="1744599337543" duration="3355000" />
+      <workItem from="1744603729041" duration="5325000" />
+      <workItem from="1744629933879" duration="4477000" />
+      <workItem from="1744637667338" duration="3486000" />
+      <workItem from="1744773340982" duration="8564000" />
+      <workItem from="1744804498931" duration="2231000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

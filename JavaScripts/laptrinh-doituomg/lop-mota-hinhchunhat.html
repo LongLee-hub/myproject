@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+<body>
+<canvas id="myCanvas" width="400" height="400"></canvas>
+<script>
+    let hinhChuNhat = function(x,y){
+        this.length = x;
+        this.width = y;
+        this.getChuVi = function(){
+            return 2*(this.length + this.width);
+        };
+        this.getDienTich = function(){
+            return this.length*this.width
+        };
+        this.draw = function(canvasId){
+            var canvas = document.getElementById(canvasId);
+            var ctx = canvas.getContext("2d");
+            ctx.beginPath();
+            ctx.fillStyle = "red";
+            ctx.fillRect(0,0,this.width,this.length);
+            ctx.fill();
+        };
+    }
+    let chieudai = +prompt(" Chiều dài?");
+    let chieurong = +prompt(" Chiều rộng");
+    let HCN = new hinhChuNhat(chieudai,chieurong);
+    let chuVi = HCN.getChuVi();
+    let dienTich = HCN.getDienTich();
+    document.write("Chu Vi là "+chuVi+"<br>"+"Diện tích là "+dienTich+"<br>");
+    HCN.draw("myCanvas");
+
+
+
+</script>
+</body>
+</html>

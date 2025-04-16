@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số lớn nhất</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập số a:")
+    let b = +prompt(" Nhập số b:")
+    let c = +prompt("Nhập số c:")
+    if (isNaN(a) || isNaN(b) || isNaN(c)) {
+        document.write("số của bạn nhập không hợp lệ")
+    } else {
+        if (a > b && a > c) {
+            document.write("số lớn nhất là " + a)
+        } else if (b > a && b > c) {
+            document.write("số lớn nhất là " + b)
+        } else if (c > a && c > b) {
+            document.write("số lớn nhất là " + c)
+        }
+    }
+</script>
+
+</body>
+</html>

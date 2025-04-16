@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký học viên</title>
+  <style>
+    body {
+      padding: 50px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td, th {
+      padding: 20px;
+      border: 1px solid black;
+    }
+    th{
+      font-family: 'Patua One', cursive;
+      font-size:16px;
+      font-weight:400;
+      color:#fff;
+      text-align:center;
+      padding:20px;
+      background-color: #d61b06;
+      border-color: white;
+    }
+    td{
+      font-family: 'Open Sans', sans-serif;
+      font-weight:400;
+      color:#5f6062;
+      font-size:13px;
+      padding:20px 20px 20px 20px;
+      border-bottom:1px solid #e0e0e0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<form method="post" action="http://localhost:8080/thankyou">
+<table style="width:100%">
+  <tr>
+    <th colspan="2"> Đăng ký học viên </th>
+  </tr>
+  <tr>
+    <td>
+      <label for ="username">Họ và tên</label>
+    </td>
+    <td>
+      <input type="text" name="username" id="username" required>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label for = "birthday">Ngày sinh</label>
+    </td>
+    <td>
+      <input type="date" name="birthday" id="birthday" required>
+    </td>
+  </tr>
+  <tr>
+    <td><label>Giới tính</label></td>
+    <td>
+      <input type="radio" name="gender" id="nam" value="nam">
+      <label for="nam">Nam</label>
+
+      <input type="radio" name="gender" id="nu" value="nữ">
+      <label for="nu">Nữ</label>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label for = "adress"> Địa chỉ</label>
+    </td>
+    <td>
+      <textarea name="adress" id="adress" cols="30" rows="10"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label for = "Class"> Lớp</label>
+    </td>
+    <td>
+      <select name="Class" id="Class">
+        <option value="S206">S206</option>
+        <option value="S207">S207</option>
+        <option value="S208">S208</option>
+      </select>
+
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label for = "email"> Email</label>
+    </td>
+    <td>
+      <input type="email" name="email" id="email" required>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label for = "phone">Điện thoại</label>
+    </td>
+    <td>
+      <input type="tel" name="phone" id="phone" required>
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>
+      <input type="submit" value="Đăng ký">
+      <input type="reset" value="Nhập lại">
+    </td>
+  </tr>
+</table>
+</form>
+</body>
+</html>

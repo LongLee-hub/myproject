@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 3</title>
+</head>
+<body>
+<script>
+  let x = [1, 22, 33, 4, 5, 64, 75, 83, 9];
+  let max = x[0];
+  let vitri = 0;
+  let trungbinh = 0
+  for (let i = 0; i < x.length; i++) {
+    trungbinh += x[i];
+    if (x[i] > max) {
+      max = x[i];
+      vitri = i;
+    }
+  }
+  document.write(max+" ở vị trí " + vitri + "<br>");
+  document.write("giá trị trung bình là " + trungbinh/x.length);
+</script>
+</body>
+</html>

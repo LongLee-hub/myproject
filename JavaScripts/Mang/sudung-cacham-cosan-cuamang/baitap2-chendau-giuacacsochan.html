@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chèn dấu - giữa các số chẵn</title>
+</head>
+<body>
+<script>
+    let x = prompt("Nhập dãy số của bạn")
+    let array = Array.from(x).map(Number);
+    let result = [];
+    for (let i = 0; i < array.length; i++) {
+        result += array[i];
+        if (i<array.length && array[i] % 2 == 0 && array[i+1] % 2 == 0) {
+            result += "-";
+        }
+    }
+document.write(result);
+</script>
+
+</body>
+</html>

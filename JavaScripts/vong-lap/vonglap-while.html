@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tổng các giá trị(vòng lặp while)</title>
+</head>
+<body>
+<p id="tong"></p>
+<script>
+    let num = parseInt(prompt("Nhập số của bạn: "))
+    let tong = 0;
+    while(num != -1){
+        tong += num;
+        alert("Tổng hiện tại: " + tong);
+        num = parseInt(prompt("Nhập tiếp số để tính tổng (Nhập -1 để thoát): "))
+    }
+    document.getElementById("tong").innerHTML = "Tổng các số bạn nhập là: " + tong;
+</script>
+</body>
+</html>

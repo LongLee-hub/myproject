@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sử dụng if -else đăng nhập người dùng</title>
+</head>
+<body>
+<script>
+  let username= prompt('Username:');
+  if(username=== "Admin"){
+      let password = prompt('Password:');
+      if(password === "TheMaster"){
+          alert('Welcome!');
+      }
+      else if(password == null){
+          alert('Cancelled!');
+      }
+      else{
+          alert('Wrong password!');
+      }
+  }
+  else if(username== null){
+      alert('Cancelled!');
+  }
+  else{
+      alert('I dont know you');
+  }
+</script>
+</body>
+</html>

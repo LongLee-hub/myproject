@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra tuổi 1 người</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    let a = +prompt("Nhập tuổi bạn cần kiểm tra")
+    if (a < 0 || a > 120) {
+        document.getElementById("demo").innerHTML = a + " Không phải tuổi của 1 người"
+    } else if (isNaN(parseFloat(a))){
+        document.getElementById("demo").innerHTML = a + " Không phải tuổi của 1 người"
+    } else {
+        document.getElementById("demo").innerHTML = a + " Là tuổi của một người"
+    }
+</script>
+
+</body>
+</html>
