@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffa0f514-868d-4d63-a713-81db97797e11" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/JavaScripts/bai-tap-if-else-switch-case/good-fast-cheap.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScripts/bai-tap-if-else-switch-case/good-fast-cheap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/Dichuyen-doituong.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/Dichuyen-doituong.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/Xaydung-lopmophong-denpin.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/Xaydung-lopmophong-denpin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/tuongtac-congtac-bongden.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/tuongtac-congtac-bongden.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/turn0ff-0n-light.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/turn0ff-0n-light.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/chuyendoi-doF-doC.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -40,22 +35,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "E:/Code gym/my project",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Code gym/my project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Code gym\my project\JavaScripts\luyentap-cautruc-dk2" />
@@ -130,6 +125,7 @@
       <workItem from="1744637667338" duration="3486000" />
       <workItem from="1744773340982" duration="8564000" />
       <workItem from="1744804498931" duration="2231000" />
+      <workItem from="1744806754777" duration="3012000" />
     </task>
     <servers />
   </component>

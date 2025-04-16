@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi độ F - Độ C</title>
+</head>
+<body>
+<script>
+    let Temperature = function (temperature) {
+        let doC = temperature;
+        if (doC > -273){
+            let doF = (doC*9/5) + 32;
+            document.write("Nhiệt độ F: " + doF + "<br>g");
+            let doK = doC + 273.15
+            document.write("Nhiệt độ K: " + doK);
+        }else{
+            alert("Không có độ C nhỏ hơn -273")
+        }
+    }
+    let a = +prompt("Giá trị độ C cần chuyển đổi?")
+    Temperature(a);
+</script>
+
+</body>
+</html>
