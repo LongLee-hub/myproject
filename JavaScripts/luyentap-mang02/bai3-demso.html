@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm số ký tự số</title>
+</head>
+<body>
+<script>
+    let x = prompt(" Chuỗi ký tự của bạn");
+    let chuoi = x.split("");
+    let count = 0;
+    for (let i = 0; i < chuoi.length; i++) {
+        if (!isNaN(Number(chuoi[i]))) {
+            count++;
+        }
+    }
+    alert(count);
+</script>
+
+</body>
+</html>

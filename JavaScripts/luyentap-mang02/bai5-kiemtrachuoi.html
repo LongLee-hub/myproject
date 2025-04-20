@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra chuỗi</title>
+</head>
+<body>
+<script>
+    let x = prompt("Chuỗi 1");
+    let y = prompt("Chuỗi 2");
+    let chuoi1 = x.split(" ");
+    let chuoi2 = y.split(" ");
+    function sosanhChuoi(chuoi1,chuoi2) {
+        if (chuoi1.length !== chuoi2.length) {
+            alert("Hai chuỗi khác nhau!")
+            return false;
+        };
+        for (let i = 0; i < chuoi1.length; i++) {
+            if (chuoi1[i] !== chuoi2[i]) {
+                alert("Hai chuỗi khác nhau!");
+                return false;
+            }
+        };
+        alert("Hai chuỗi giống nhau");
+        return true;
+    }
+    sosanhChuoi(chuoi1,chuoi2);
+</script>
+
+</body>
+</html>
