@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra ký tự trong mảng</title>
+</head>
+<body>
+<script>
+  let x = prompt("Mảng ký tự bạn muốn kiểm tra");
+  let mang = x.split("")
+  let a = prompt("Ký tự bạn muôn kiểm tra");
+  function kiemTrakytu(a,b){
+    let count = 0;
+    for (let i = 0; i < a.length; i++) {
+      if (a[i] == b) {
+        count++;
+      }
+    }
+    if (count == 0) {
+      return -1;
+    }else{
+      return count;
+    }
+  }
+  document.write(kiemTrakytu(mang,a));
+</script>
+</body>
+</html>

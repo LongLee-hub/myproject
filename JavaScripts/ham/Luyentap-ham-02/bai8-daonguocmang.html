@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Đảo ngược mảng</title>
+</head>
+<body>
+<script>
+  let x = prompt(`Mảng số nguyên của bạn, phân cách số bằng dấu ","`);
+  let mang = x.split(",");
+  document.write(mang +"<br>")
+  function daoNguoc(a){
+    for (let i = 0; i < a.length/2; i++) {
+      let num = a[i];
+      a[i] = a[a.length - 1 -i];
+      a[a.length - 1 - i] = num;
+    }
+    return a;
+  }
+  document.write(daoNguoc(mang));
+
+</script>
+
+</body>
+</html>

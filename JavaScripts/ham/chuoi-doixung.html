@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra chuỗi đối xứng</title>
+</head>
+<body>
+<script>
+  let x = prompt("Chuỗi của bạn là");
+  function isPalindrome(str) {
+    let chuoi = str.split("");
+    for (let i = 0; i < chuoi.length; i++) {
+      if (chuoi[i] !== chuoi[chuoi.length - 1-i]) {
+        return false;
+      }
+      return true;
+    }
+  }
+  if (isPalindrome(x)) {
+    alert("Chuỗi của bạn là đối xứng");
+    } else {
+    alert("Chuỗi bạn không đối xứng")
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích và chu vi</title>
+</head>
+<body>
+<script>
+  let x = prompt("Bán kính hình tròn");
+  function dtcvHinhtron(a) {
+    let num = Number(a);
+    chuVi = 2*Math.PI*num;
+    dienTich = Math.PI*num*num;
+    return (chuVi,dienTich);
+  }
+  dtcvHinhtron(x);
+  document.write("Chu vi là " + chuVi + "<br>"+ "Diện tích là " +  dienTich);
+</script>
+</body>
+</html>

@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffa0f514-868d-4d63-a713-81db97797e11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/quanly-hanghoa/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/quanly-hanghoa/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaScripts/laptrinh-doituomg/quanly-hanghoa/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaScripts/luyentap-mang02/bai3-demso.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaScripts/luyentap-mang02/bai4-demtu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaScripts/luyentap-mang02/bai5-kiemtrachuoi.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaScripts/luyentap-mang02/bai6-timkytu-thaythe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaScripts/ham/Luyentap-ham-02/bai1-tinhbinhphuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaScripts/ham/Luyentap-ham-02/bai2-tinhdientich-chuvi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaScripts/ham/Luyentap-ham-02/bai3-tinhgiaithua.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaScripts/ham/Luyentap-ham-02/bai4-kiemtrakytuso.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaScripts/ham/Luyentap-ham-02/bai5-timsonguyennhonhat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaScripts/ham/Luyentap-ham-02/bai6-kiemtrasonguyenduong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaScripts/ham/Luyentap-ham-02/bai7-doicho.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaScripts/ham/Luyentap-ham-02/bai8-daonguocmang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaScripts/ham/Luyentap-ham-02/bai9-kiemtrakytu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaScripts/ham/chuoi-doixung.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +136,7 @@
       <workItem from="1744804498931" duration="2231000" />
       <workItem from="1744806754777" duration="3595000" />
       <workItem from="1744985442609" duration="576000" />
-      <workItem from="1745138084839" duration="1354000" />
+      <workItem from="1745138084839" duration="10256000" />
     </task>
     <servers />
   </component>

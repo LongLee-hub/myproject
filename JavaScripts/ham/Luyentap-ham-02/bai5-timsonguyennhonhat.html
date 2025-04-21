@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số nguyên nhỏ nhất</title>
+</head>
+<body>
+<script>
+  let a = prompt("số nguyên 1");
+  let b = prompt("số nguyên 2");
+  let c = prompt("số nguyên 3");
+  let x = parseInt(a);
+  let y = parseInt(b);
+  let z = parseInt(c);
+  if (isNaN(x) || isNaN(y) || isNaN(z)) {
+    alert("Vui lòng nhập số hợp lệ")
+  }else{
+    document.write(giatriNhonhat(a,b,c));
+  }
+  function giatriNhonhat(a,b,c){
+    if ( a < b){
+      if (a < c){
+        return a;
+      }else{
+        return c;
+      }
+    }else{
+      if ( b>c){
+        return c;
+      }else{
+        return b;
+      }
+    }
+  }
+
+</script>
+</body>
+</html>

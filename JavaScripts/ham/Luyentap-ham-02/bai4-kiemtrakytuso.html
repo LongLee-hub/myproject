@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra ký tự số</title>
+</head>
+<body>
+<script>
+  let x = prompt("Ký tự số");
+  function kiemTrakytus(a) {
+    if (a === null || isNaN(Number(a))) {
+      return false;
+    }else{
+      return true;
+    }
+  }
+  console.log(kiemTrakytus(x));
+</script>
+</body>
+</html>

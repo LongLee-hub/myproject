@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số nguyên dương</title>
+</head>
+<body>
+<script>
+    let x = prompt("Kiểm tra số nguyên dương");
+    let a = parseInt(x);
+    function kiemTra(x) {
+        if ( x === null ||isNaN(a)){
+            return false;
+        }else{
+            return Number.isInteger(a) && a > 0;
+        }
+    }
+    if (kiemTra(a)) {
+        alert(` ${a} là số nguyên dương`);
+    }else{
+        alert(` ${a} không là số nguyên dương`)
+    }
+</script>
+
+</body>
+</html>

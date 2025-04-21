@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính bình phương</title>
+</head>
+<body>
+<script>
+    let x = prompt("Số bạn muốn bình phương");
+    if (x === isNaN(Number(x)) || x === null) {
+        document.write("Vui lòng nhập số hợp lệ");
+    } else {
+        let number = Number(x);
+
+        function binhPhuong(a) {
+            return Math.pow(a,2);
+        };
+        document.write(binhPhuong(number));
+    }
+</script>
+</body>
+</html>

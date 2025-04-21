@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đổi chỗ 2 số nguyên</title>
+</head>
+<body>
+<script>
+    let x = prompt(`Nhập mảng 2 số, phân cách bằng ","`);
+    let mang = x.split(",");
+    document.write(mang + "<br>");
+
+    function doiCho(a) {
+        let x = a[0];
+        a[0] = a[1];
+        a[1] = x;
+        return a;
+    }
+
+    let doicho = doiCho(mang);
+    document.write(doicho);
+</script>
+
+</body>
+</html>
