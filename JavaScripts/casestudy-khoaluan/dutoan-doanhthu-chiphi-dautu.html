@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dự toán doanh thu chi phí</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<h2 class="main-title">Bảng dự toán chi phí đầu tư - doanh thu - lợi nhuận</h2>
+<div class="two-column-layout">
+    <div class="left-column">
+        <form id="roomForm">
+            Tên phòng<br><input type="text" name="roomName" id="roomName" placeholder="room name" required><br>
+            Tiền đầu tư<br><input type="number" name="roomInvest" id="roomInvest" placeholder="100000000" required><br>
+            Giá phòng/ngày<br><input type="number" name="roomPrice" id="roomPrice" placeholder="4990000" required><br>
+            Tỉ lệ lấp đầy<br><input type="number" name="roomOccupancyRate" id="roomOccupancyRate" placeholder="0.8"
+                                    step="0.01"
+                                    required><br>
+            <button type="submit" id="btnAdd">Add Room</button>
+        </form>
+    </div>
+
+    <div class="right-column">
+
+        <table>
+            <tr>
+                <th colspan="6" style="text-align: center"> Dự toán đầu tư</th>
+            </tr>
+            <tr>
+                <td>Phòng</td>
+                <td>Đầu tư dự kiến</td>
+                <td>Giá bán dự kiến</td>
+                <td>Tỉ lệ kín dự kiến</td>
+                <td>Sửa</td>
+                <td>Xóa</td>
+            </tr>
+            <tbody id="roomList">
+            </tbody>
+            <tr>
+                <td colspan="3">
+                    <button type="button" onclick="xuatDutoan()">Dự toán doanh thu</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="table-container">
+    <div class="table-box" id="revenueSection" style="display: none;">
+        <h3>Bảng doanh thu dự kiến</h3>
+        <table>
+            <thead>
+            <tr>
+                <th>Phòng</th>
+                <th>Doanh thu dự kiến (30 ngày)</th>
+            </tr>
+            </thead>
+            <tbody id="revenueTable">
+            <!-- Dữ liệu JS sẽ chèn vào đây -->
+            </tbody>
+        </table>
+    </div>
+    <div class="table-box" id="expensesSection" style="display: none;">
+        <h3>Bảng chi phí dự kiến</h3>
+        <table>
+            <thead>
+            <tr>
+                <th>Khoản chi</th>
+                <th>% dự tính</th>
+                <th>Chi phí dự kiến (30 ngày)</th>
+            </tr>
+            </thead>
+            <tbody id="expensesTable">
+            <!-- Dữ liệu JS sẽ chèn vào đây -->
+            </tbody>
+        </table>
+    </div>
+    <div class="table-box" id="profitSection" style="display: none;">
+        <h3>Bảng lợi nhuận dự kiến</h3>
+        <table>
+            <thead>
+            <tr>
+                <th>Tổng kết</th>
+            </tr>
+            </thead>
+            <tbody id="profitTable">
+            <!-- Dữ liệu JS sẽ chèn vào đây -->
+            </tbody>
+        </table>
+        <button id="calculate-btn">Tính lại</button>
+    </div>
+</div>
+<script src="dutoan-doanhthu-chiphi-dautu.js"></script>
+</body>
+</html>
