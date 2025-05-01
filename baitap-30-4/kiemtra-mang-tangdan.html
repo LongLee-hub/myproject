@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài kiểm tra mảng tăng dần</title>
+</head>
+<body>
+<p id="mang"></p>
+<script>
+    let x = prompt("Nhập mảng cần kiểm tra ( phân cách bằng dấu ,)");
+    let mang = x.split(",");
+    let mangso = mang.map(Number);
+    document.getElementById("mang").innerHTML = "Mảng của bạn là "+ mang;
+    let tangdan = true;
+    for (let i = 1; i < mangso.length; i++) {
+        if (mangso[i] <= mangso[i-1]) {
+            tangdan = false;
+            break;
+        }
+    }
+    if (tangdan == true) {
+        document.write("Mảng này oke")
+    }else{
+        document.write("Mảng này No tăng dần")
+    }
+
+</script>
+</body>
+</html>
