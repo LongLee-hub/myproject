@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 2</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Số thứ nhất");
+    let b = +prompt("Số thứ hai");
+    
+    function kiemTraCapSoThanThiet(a, b) {
+        let tongUoca = 0;
+        let tongUocb = 0;
+        for (let i = 1; i < a; i++) {
+            if (a % i === 0) {
+                tongUoca += i;
+            }
+        }
+        for (let i = 1; i < b; i++) {
+            if (b % i === 0) {
+                tongUocb += i;
+            }
+        }
+        if (tongUoca === b && tongUocb === a) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    if (isNaN(a) || isNaN(b)) {
+        document.write("Vui lòng nhập số hợp lệ")
+    } else {
+        if (kiemTraCapSoThanThiet(a, b)) {
+            document.write(a + " và " + b + " là 2 cặp số thân thiết")
+        } else {
+            document.write(a + " và " + b + " không phải là 2 cặp số thân thiết")
+        }
+    }
+
+</script>
+</body>
+</html>

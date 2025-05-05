@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 3</title>
+
+
+</head>
+<body>
+<h2> Quản lý sách</h2>
+<form>
+  <label></label>
+</form>
+<table>
+  <thead>
+  <tr>
+    <th>Mã số sách</th>
+    <th>Tên sách</th>
+    <th>Năm xuất bản</th>
+    <th>Số quyển</th>
+    <th>Tình trạng</th>
+  </tr>
+  </thead>
+  <tbody id="bookList">
+  </tbody>
+</table>
+
+<table>
+  <tr>
+    <td><button onclick="themSachDaCo()"> Thêm sách đã có</button></td>
+    <td><button onclick="themSachMoi()">Thêm sách mới</button></td>
+    <td><button onclick="muonSach()"> Mượn sách</button></td>
+    <td>Hiển thị sách nhiều nhất</td>
+  </tr>
+</table>
+<form id="bookForm">
+  Mã<br><input type="number" id="ma" name="ma"><br>
+  Tên<br><input type="text" id="ten" name="ten"><br>
+  Năm xuất bản<br><input type="number" id="namXuatBan" name="namXuatBan"><br>
+  Số lượng<br><input type="number" id="soLuong" name="SoLuong"><br>
+  Tình trạng<br><input type="text" id="tinhTrang" name="tinhTrang"><br>
+  <button type="submit" id="btnAdd">Add Book</button>
+</form>
+<script src="cau3.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 1</title>
+</head>
+<body>
+<p id="ketQuaMang"></p>
+<p id="mangSoLe"></p>
+<p id="ketQuaTrungBinh"></p>
+<script>
+    let x = prompt("Nhập số nguyên phân cách bằng `,`");
+    let mangChuoi = x.split(",");
+    let mangSo = mangChuoi.map(Number);
+    if(mangSo.length>50 ){
+        document.getElementById("ketQuaMang").innerHTML = "Chuỗi quá dài";
+    }else if (mangChuoi.length === 0 && x !== null) {
+        document.getElementById("ketQuaMang").innerHTML = "Bạn chưa nhập gì.";
+    }
+    let mangNguyen = true
+    for (let i = 0; i < mangSo.length; i++) {
+        if (isNaN(mangSo[i]) || !Number.isInteger(mangSo[i])){
+            mangNguyen = false;
+            break;
+        }else{
+            mangNguyen = true;
+        }
+    }
+    if(mangNguyen){
+        document.getElementById("ketQuaMang").innerHTML = "Mảng của bạn nhập là : " + mangSo;
+    }else{
+        document.getElementById("ketQuaMang").innerHTML = "Mảng chứa phần tử không hợp lệ";
+    }
+    function mangSoLeViTriChan(mang){
+        let tong = 0;
+        let count = 0
+        let mangSoLe = [];
+        for (let i = 0; i < mang.length; i++) {
+            if (i % 2 === 0){
+                if (mang[i] % 2 !== 0 ){
+                    tong += mang[i];
+                    count++;
+                    mangSoLe.push(mang[i]);
+                }
+            }
+        }
+        if (count >0){
+            let trungBinhCong = tong/count;
+            document.getElementById("mangSoLe").innerHTML = "Mảng số lẻ có vị trí chẵn là: " + mangSoLe;
+            document.getElementById("ketQuaTrungBinh").innerHTML = trungBinhCong;
+        }else{
+            document.getElementById("mangSoLe").innerHTML = "Không có số lẻ nào ở vị trí chẵn";
+
+        }
+
+    }
+    mangSoLeViTriChan(mangSo);
+
+
+
+</script>
+
+</body>
+</html>
