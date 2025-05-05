@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra mảng giảm dần</title>
+</head>
+<body>
+<script>
+  let x = prompt("Nhập mảng bạn cần kiểm tra ( phân cách bằng dấu ,)");
+  let mangChuoi = x.split(",");
+  let mangSo = mangChuoi.map(Number);
+  let giamDan = true;
+  for (let i = 0; i < mangSo.length; i++) {
+    if (mangSo[i] < mangSo[i+1]) {
+      giamDan = false;
+      break;
+    }
+  }
+  if (giamDan) {
+    alert("Oke")
+  }else{
+    alert("No")
+  }
+</script>
+
+</body>
+</html>

@@ -5,11 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffa0f514-868d-4d63-a713-81db97797e11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/baitap-30-4/kiemtra-mang-tangdan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baitap-30-4/bai10-nguyenam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baitap-30-4/bai10-script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baitap-30-4/bai2-kiemtra-loai-tamgiac.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baitap-30-4/bai3-kiemtramang-giamdan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baitap-30-4/bai4-kiemtra-rutgonphanso.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baitap-30-4/bai4-script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baitap-30-4/bai5-script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baitap-30-4/bai5-timsolonnhat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baitap-30-4/bai6-kiemtra-mangsonguyen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baitap-30-4/bai6-script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baitap-30-4/bai7-kiemtra-Mangkytu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baitap-30-4/bai7-script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baitap-30-4/bai8-kiemtra-mangsonguyen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baitap-30-4/bai8-script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baitap-30-4/bai9-kiemtracap-phantulienke.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baitap-30-4/bai9-script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScripts/casestudy-khoaluan/dutoan-doanhthu-chiphi-dautu.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScripts/casestudy-khoaluan/dutoan-doanhthu-chiphi-dautu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScripts/casestudy-khoaluan/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baitap-30-4/kiemtra-mang-tangdan.html" beforeDir="false" afterPath="$PROJECT_DIR$/baitap-30-4/bai1-kiemtra-mang-tangdan.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +32,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -145,7 +158,8 @@
       <workItem from="1745637461603" duration="716000" />
       <workItem from="1745739398812" duration="1405000" />
       <workItem from="1745840811138" duration="5377000" />
-      <workItem from="1746099347353" duration="1928000" />
+      <workItem from="1746099347353" duration="5628000" />
+      <workItem from="1746410830067" duration="7110000" />
     </task>
     <servers />
   </component>
